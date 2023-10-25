@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -14,6 +14,7 @@
     --dark5: #cbdad5;
     --dark6: #2f2f46;
     --cyan1: #70e3ea;
+    --red1: red;
 }
 
 ::-webkit-scrollbar{
@@ -21,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-track{
-    background: var(--dark2);
+    background: var(--dark1);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -29,68 +30,158 @@
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: var(--dark4);
+    background: var(--red1);
+}
+
+body{
+  background-color: var(--dark2);
+  font-family: 'Montserrat';
+  color: white;
+}
+
+strong{
+  color: var(--red1);
+}
+
+img {
+  border-radius: 10px;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.8em;
+  background-color: var(--dark6);
+  min-height: 50px;
 }
 
 
+nav{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.nav-links{
+  text-decoration: none;
+  color: var(--white);
+}
 
-form {
-    /* Centralizar o formulário na pagina */
-    margin: 0 auto;
-    width: 400px;
-    /* Ver o esboço do formulário */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
+.nav-links:hover{
+  color: var(--red1);
+  transition: .4s;
+}
+
+.foto-principal{
+  background-color: var(--dark1);
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
   
-  form div + div {
-    margin-top: 1em;
-  }
+}
+
+.conheca{
+  background-color: var(--dark1);
+  text-align: center;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.conheca h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.conheca h3{
+  padding: 2em;
   
-  label {
-    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input, textarea {
-    /* 
-  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
-       Por padrão, as áreas de texto possuem a mesma fonte */
-    font-family: 'Lato';
-  
-    /* Para dar o mesmo tamanho a todos os campos de texto*/
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
-    border: 1px solid #999;
-  }
-  
-  input:focus, textarea:focus {
-    /* Para dar um pouco de destaque aos elementos ativos*/
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
-    vertical-align: top;
-  
-    /* Para dar espaço suficiente para digitar algum texto */
-    height: 5em;
-  }
-  
-  .button {
-    /* Para posicionar os botões na mesma posição dos campos de texto */
-    padding-left: 90px; /* mesmo tamanho que os elementos do rótulo */
-  }
-  
-  button {
-    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
-       entre os rótulos e seus campos de texto*/
-    margin-left: .5em;
-    border-radius: 5px solid black;
-  }
+}
+
+.link-action{
+  padding: .6rem;
+  font-size: .9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-action{
+  background-color: var(--dark2);
+  border: 1px solid var(--white);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+}
+
+.btn-action:hover {
+  background-color: var(--red1);
+  border: 1px solid var(--red1);
+}
+
+.title-espacos h1{
+  padding: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.espacos{
+  background-color: var(--dark1);
+  padding: 20px;
+  margin: 0px 50px;
+  border-radius: 10px;
+}
+
+.reuniao, .sala-individual, .sala-compartilhada, .sala-espera, .banheiros, .evento{
+  display: flex;
+  background-color: var(--dark2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.reuniao p, .sala-individual p, .sala-compartilhada p, .sala-espera p, .banheiros p, .evento p{
+  font-size: 20px;
+  max-width: 50%;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.title-coworking h1{
+  padding: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.caixas-formas-coworking{
+  background-color: var(--dark1);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.caixa-hora{
+  border-left: 1px solid var(--red1);
+}
+
+svg{
+  color: red;
+}
+
+.title-localizacao h2{
+  padding: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.localizacao{
+  display: flex;
+}
