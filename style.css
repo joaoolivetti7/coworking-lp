@@ -250,8 +250,8 @@ footer section {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-
-}
+  align-items: center;
+} 
 
 footer section .title-contato{
   padding: 50px;
@@ -272,26 +272,25 @@ footer section .card-contato {
 }
 
 footer section .sobre {
-background-color: var(--dark2);
-border-radius: 10px;
-justify-content: center;
-text-align: center;
-padding: 2rem;
-width: 80%;
+  background-color: var(--dark2);
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  width: 80%;
 }
 
 footer section .sobre p{
   padding: 2rem;
   font-size: 25px;
   height: 90%;
-  }
+}
 
-  footer section .sobre h1{
-    padding: 2rem;
-    font-size: 40px;
-    text-transform: uppercase;
-  
-    }
+footer section .sobre h1{
+  padding: 2rem;
+  font-size: 40px;
+  text-transform: uppercase;
+}
 
 footer section .card-contato svg {
   transition: .2s;
