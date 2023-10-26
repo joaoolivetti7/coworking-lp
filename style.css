@@ -238,6 +238,50 @@ svg{
 
 .localizacao img {
   width: 100%;
+}
 
+footer {
+  margin: 2rem 0 0;
+  background: var(--dark1);
+  padding: 1rem 50px;
+}
+
+footer section {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section .card-contato {
+  background: var(--dark2);
+  width: 80%;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+footer section .card-contato svg {
+  transition: .2s;
+  color: white
+}
+
+footer section .card-contato a {
+  transition: .2s;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+}
+
+footer section .card-contato:hover a {
+  color: var(--red1)
+}
+
+footer section .card-contato:hover svg {
+  color: var(--red1)
 }
 
