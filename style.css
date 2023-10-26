@@ -57,8 +57,9 @@ header{
   padding: 0.8em;
   background-color: var(--dark6);
   min-height: 50px;
+  margin: 0 0 1rem;
+  box-shadow: 0px 15px 10px 0px rgba(0,0,0,0.5);
 }
-
 
 nav{
   display: flex;
@@ -129,6 +130,60 @@ nav{
   border: 1px solid var(--red1);
 }
 
+@media screen and (max-width: 480px) {
+  .foto-principal{
+    background-color: var(--dark1);
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .foto-principal img{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0px 16px 18px 0px rgba(0,0,0,0.5);
+  }
+
+  .conheca{
+    background-color: var(--dark1);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .conheca h2{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .conheca h3{
+    padding: 1rem;
+  }
+
+  .link-action{
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+    display: block;
+  }
+  
+  .btn-action{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--dark2);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  .btn-action:hover {
+    background-color: var(--red1);
+    border: 1px solid var(--red1);
+  }
+}
+
 .title-espacos h1{
   padding: 50px;
   font-size: 40px;
@@ -155,14 +210,90 @@ nav{
   padding: 10px;
 }
 
-.espacos div{
+.espacos .container{
   display: flex;
   background-color: var(--dark2);
   border-radius: 10px;
   padding: 10px;
-  margin: 20px 0px;
   align-items: center;
   justify-content: center;
+}
+
+.espacos .container div{
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.botoes{
+  display: none
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    overflow: hidden;
+  }
+
+  .title-espacos h1{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .espacos{
+    transition: .5s;
+    background-color: var(--dark1);
+    padding: 0px;
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+  }
+  
+  .espacos img {
+    width: 100%;
+  }
+  
+  .espacos p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .espacos .container{
+    min-width: 100vw;
+    max-width: 100vw;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark2);
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .espacos .container div{
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .botoes{
+    display: flex;
+    background: var(--dark1);
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .botoes button {
+    padding: .5rem 1rem;
+    border: none;
+  }
 }
 
 
