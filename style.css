@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -82,7 +83,10 @@ nav{
   padding: 20px;
   margin: 50px;
   border-radius: 10px;
-  
+}
+
+.foto-principal img{
+  width: 100%;
 }
 
 .conheca{
@@ -111,9 +115,9 @@ nav{
 }
 
 .btn-action{
-  background-color: var(--dark2);
+  background-color: var(--white);
   border: 1px solid var(--white);
-  color: var(--white);
+  color: var(--dark2);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -128,7 +132,8 @@ nav{
 .title-espacos h1{
   padding: 50px;
   font-size: 40px;
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .espacos{
@@ -138,26 +143,34 @@ nav{
   border-radius: 10px;
 }
 
-.reuniao, .sala-individual, .sala-compartilhada, .sala-espera, .banheiros, .evento{
-  display: flex;
-  background-color: var(--dark2);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px 0px;
+.espacos img {
+  width: 50%;
 }
 
-.reuniao p, .sala-individual p, .sala-compartilhada p, .sala-espera p, .banheiros p, .evento p{
+.espacos p {
   font-size: 20px;
-  max-width: 50%;
+  width: 100%;
   text-align: center;
   align-items: center;
   padding: 10px;
 }
 
+.espacos div{
+  display: flex;
+  background-color: var(--dark2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .title-coworking h1{
   padding: 50px;
   font-size: 40px;
-  text-align: center;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .caixas-formas-coworking{
@@ -165,11 +178,19 @@ nav{
   display: flex;
   justify-content: center;
   padding: 20px;
-  text-align: center;
 }
 
-.caixa-hora{
-  border-left: 1px solid var(--red1);
+.caixas-formas-coworking div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixas-formas-coworking div p{
+  border-left: .8rem solid var(--red1);
+  height: 90%;
+  padding: 1rem;
+  text-align: justify;
 }
 
 svg{
@@ -179,9 +200,44 @@ svg{
 .title-localizacao h2{
   padding: 50px;
   font-size: 40px;
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .localizacao{
   display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: var(--dark1);
+  padding: 20px;
+  margin: 0px 50px;
+  border-radius: 10px;
 }
+
+.localizacao div:nth-of-type(1){
+  width: 100%;
+  display: flex;
+  gap: .5rem;
+}
+
+.localizacao div:nth-of-type(1) div{
+  width: 50%;
+}
+
+.localizacao .endereco a{
+  margin: 1rem 0 0;
+  color: var(--white);
+  transition: .2s;
+}
+
+.endereco a:hover{
+  color: var(--red1);
+
+}
+
+
+.localizacao img {
+  width: 100%;
+
+}
+
