@@ -197,7 +197,7 @@ svg{
   color: red;
 }
 
-.title-localizacao h2{
+.title-localizacao h1{
   padding: 50px;
   font-size: 40px;
   text-align: left;
@@ -250,22 +250,52 @@ footer section {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  align-items: center;
+
+}
+
+footer section .title-contato{
+  padding: 50px;
+  font-size: 30px;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 footer section .card-contato {
   background: var(--dark2);
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 10px;
   align-items: center;
   display: flex;
   padding: 2rem;
   gap: 2rem;
+
 }
+
+footer section .sobre {
+background-color: var(--dark2);
+border-radius: 10px;
+justify-content: center;
+text-align: center;
+padding: 2rem;
+width: 80%;
+}
+
+footer section .sobre p{
+  padding: 2rem;
+  font-size: 25px;
+  height: 90%;
+  }
+
+  footer section .sobre h1{
+    padding: 2rem;
+    font-size: 40px;
+    text-transform: uppercase;
+  
+    }
 
 footer section .card-contato svg {
   transition: .2s;
-  color: white
+  color: white;
 }
 
 footer section .card-contato a {
@@ -275,6 +305,7 @@ footer section .card-contato a {
   font-weight: bolder;
   font-size: 1.5rem;
   letter-spacing: .5rem;
+  text-decoration: none;
 }
 
 footer section .card-contato:hover a {
