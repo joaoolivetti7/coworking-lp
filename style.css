@@ -231,8 +231,8 @@ nav{
 }
 
 @media screen and (max-width: 480px) {
-  .carousel {
-    overflow: hidden;
+  #carousel {
+    overflow-x: hidden;
   }
 
   .title-espacos h1{
@@ -253,6 +253,7 @@ nav{
   
   .espacos img {
     width: 100%;
+    border-radius: 0;
   }
   
   .espacos p {
@@ -291,8 +292,13 @@ nav{
   }
 
   .botoes button {
-    padding: .5rem 1rem;
+    padding: 0;
     border: none;
+    background: transparent;
+  }
+
+  .botoes button svg {
+    color: var(--white);
   }
 }
 
@@ -371,6 +377,51 @@ svg{
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .title-coworking h1{
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .caixas-formas-coworking{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .title-localizacao h1{
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .localizacao{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: var(--dark1);
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .localizacao div:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .localizacao div:nth-of-type(1) div{
+    width: 100%;
+  }
+
+  .localizacao div:nth-of-type(1) div iframe{
+    min-height: 250px;
+  }
+}
+
 footer {
   margin: 2rem 0 0;
   background: var(--dark1);
@@ -444,5 +495,51 @@ footer section .card-contato:hover a {
 
 footer section .card-contato:hover svg {
   color: var(--red1)
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 1rem 0
+  }
+  
+  footer section .title-contato{
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  footer section .sobre {
+    background-color: var(--dark2);
+    justify-content: center;
+    text-align: justify;
+    padding: .5rem;
+    width: 100%;
+  }
+  
+  footer section .sobre p{
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  footer section .sobre h1{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  footer section .card-contato a {
+    transition: .2s;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    text-decoration: none;
+  }
+
+  footer section .card-contato:nth-of-type(3) a {
+    font-size: 10px;
+    letter-spacing: normal;
+  }
+  
 }
 
