@@ -92,22 +92,26 @@ nav{
 
 .foto-principal{
   background-color: var(--dark1);
-  width: 100vw;
-  height: 70vh;
   display: flex;
   position: relative;
   align-items:center;
-  justify-content: end;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.foto-principal .img-main {
+  width: 80%;
+  padding: 1rem
 }
 
 .foto-principal img {
   width: 100%;
-  aspect-ratio: 2/1;
+  border-radius: 1rem;
 }
 
 .foto-principal .botao-contato{
   position: absolute;
-  margin: 1rem;
+  margin: 2rem;
   transition: .2s;
   display: flex;
   justify-content: center;
@@ -118,11 +122,12 @@ nav{
   border-radius: 10px;
   text-decoration: none;
   font-weight: bolder;
-  color: var(--dark1)
+  color: var(--dark1);
+  align-self: flex-end;
 }
 
-.foto-principal .botao-contato:hover {
-  background: var(--red1);
+.foto-principal .botao-contato:hover  {
+  background: #40C351;
   color: white
 }
 
@@ -133,6 +138,60 @@ nav{
 .foto-principal .botao-contato svg{
   color: var(--dark1);
   width: 33px;
+}
+
+@media screen and (max-width: 480px) {
+  .foto-principal{
+    background-color: var(--dark1);
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  
+  .foto-principal .img-main {
+    width: 100%;
+    padding: 0
+  }
+  
+  .foto-principal img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .foto-principal .botao-contato{
+    position: absolute;
+    margin: 1rem;
+    transition: .2s;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--dark1);
+    align-self: flex-end;
+  }
+  
+  .foto-principal .botao-contato:hover  {
+    background: #40C351;
+    color: white
+  }
+  
+  .foto-principal .botao-contato:hover svg{
+    color: white
+  }
+  
+  .foto-principal .botao-contato svg{
+    color: var(--dark1);
+    width: 20px;
+  }
 }
 
 .conheca{
@@ -604,6 +663,10 @@ footer section .card-contato:hover svg {
   filter: drop-shadow(7px 7px 4px rgba(0,0,0,0.5));
 }
 
+footer section .card-contato:nth-of-type(3) a {
+  font-size: clamp(10px, calc(100vw * .03), 1.5rem);
+  letter-spacing: normal;
+}
 
 .contato-wha svg {
   width: 100%;
@@ -650,7 +713,7 @@ footer section .card-contato:hover svg {
   }
 
   footer section .card-contato:nth-of-type(3) a {
-    font-size: 10px;
+    font-size: calc(100vw * .03);
     letter-spacing: normal;
   }
 
@@ -672,6 +735,11 @@ footer section .card-contato:hover svg {
     width: 100%;
     height: 100%;
     filter: drop-shadow(7px 7px 4px rgba(0,0,0,0.5));
+  }
+
+  .contato-wha {
+    right: 1rem;
+    bottom: 1rem;
   }
   
 }
