@@ -13,8 +13,6 @@ setTimeout(setWidth, 1000)
 let counter = 0
 let dist = []
 
-console.log(slides, next, prev)
-
 for(let i = 0; i < slides.children.length; i++){
     dist.push((width)*i)
 }
