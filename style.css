@@ -109,7 +109,7 @@ nav{
   border-radius: 1rem;
 }
 
-.foto-principal .botao-contato{
+.botao-contato{
   position: absolute;
   margin: 2rem;
   transition: .2s;
@@ -126,16 +126,16 @@ nav{
   align-self: flex-end;
 }
 
-.foto-principal .botao-contato:hover  {
+.botao-contato:hover  {
   background: #40C351;
   color: white
 }
 
-.foto-principal .botao-contato:hover svg{
+.botao-contato:hover svg{
   color: white
 }
 
-.foto-principal .botao-contato svg{
+.botao-contato svg{
   color: var(--dark1);
   width: 33px;
 }
@@ -404,6 +404,17 @@ nav{
   .botoes button svg {
     color: var(--white);
   }
+}
+
+.container-a2{
+  margin: 1rem 0
+}
+
+.a2{
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  max-width: 60%;
 }
 
 
