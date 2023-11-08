@@ -1,12 +1,22 @@
 const next = document.getElementById('nex')
 const prev = document.getElementById('ant')
 const slides = document.getElementsByClassName('espacos')[0];
+const menu = document.getElementsByClassName('menu-button')[0];
+const containerNav = document.getElementsByClassName('container-nav')[0];
 let width = screen.width
+
+let menuOpen = false
 
 function setWidth(){
     width = screen.width
     setTimeout(setWidth, 1000)
 }
+
+menu.addEventListener('click', () => {
+    if (!menuOpen) containerNav.classList.add('display')
+    else containerNav.classList.remove('display')
+    menuOpen = !menuOpen
+})
 
 setTimeout(setWidth, 1000)
 

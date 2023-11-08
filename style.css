@@ -90,6 +90,74 @@ nav{
   width: 100%
 }
 
+@media screen and (max-width: 480px) {
+  header{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* gap: 1rem; */
+    /* flex-wrap: wrap; */
+    /* padding: 0.8em; */
+    /* background-color: var(--dark6); */
+    /* min-height: 50px; */
+    /* margin: 0 0 1rem; */
+  }
+
+  .container-nav{
+    height: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    background-color: var(--dark6);
+    transform-origin: top;
+  }
+
+  .container-nav nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .display {
+    transform: scaleX(1);
+    display: flex;
+    height: 200px;
+  }
+  
+  .logo {
+    max-width: 60vw;
+  }
+  
+  #menu {
+    display: flex
+  }
+
+  label[for="menu"]{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu-button, .menu-button::after, .menu-button::before{
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -12px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 12px;
+  }
+
+}
+
 .foto-principal{
   background-color: var(--dark1);
   display: flex;
@@ -324,6 +392,7 @@ nav{
   padding: 10px;
   align-items: center;
   justify-content: center;
+  margin: 1rem 0;
 }
 
 .espacos .container div{
@@ -331,6 +400,8 @@ nav{
   padding: 1rem;
   justify-content: center;
   align-items: center;
+  background: var(--dark1);
+  border-radius: 1rem;
 }
 
 .botoes{
@@ -351,7 +422,7 @@ nav{
   
   .espacos{
     transition: .5s;
-    background-color: var(--dark1);
+    background-color: transparent;
     padding: 0px;
     margin: 0;
     border-radius: 0;
